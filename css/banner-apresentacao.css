@@ -1,0 +1,44 @@
+.banner-apresentacao{
+    display: flex;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    overflow-x: hidden;
+}
+
+.banner-apresentacao video{
+    height: 100vh;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.banner-apresentacao_conteudo{
+    margin-top: 25vh;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-apresentacao_titulo{
+    border-right: 4px solid transparent;
+    color: var(--branco);
+    display: inline-block;
+    font-size: var(--fonte-tamanho-titulo);
+    overflow-x: hidden;
+    padding-right: var(--fonte-tamanho-paragrafo);
+    white-space: nowrap;
+}
+
+.banner-apresentacao_txt{
+    border-right: 4px solid transparent;
+    color: var(--branco);
+    display: flex;
+    font-size: var(--fonte-tamanho-paragrafo);
+    margin-top: 10vh;
+    overflow-x: hidden;
+    padding-right: var(--fonte-tamanho-paragrafo);
+    white-space: nowrap;
+    width: var(--tamanho-caixa-home-banner-apresentacao--titulo);
+}

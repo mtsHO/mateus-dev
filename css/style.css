@@ -1,0 +1,29 @@
+:root {
+    --branco: #FFFFFF;
+    --verde-claro: #8FF7D0;
+    --verde-medio: #1CF7A5;
+    --verde-escuro: #38A079;
+    --cinza: #5F5F5F;
+
+    --preto-fonte: #2B2B2B;
+
+    --fonte-tamanho-titulo: 2.5rem;
+    --fonte-tamanho-paragrafo: 1.8rem;
+
+    --tamanho-caixa-home-banner-apresentacao-titulo: 28rem;
+    --tamanho-caixa-home-banner-apresentacao-subtitulo: 65rem;
+    --tamanho-caixa-home-banner-apresentacao-botao: 10rem;
+
+    --fonte-familia-padrao: 'Special Elite', cursive;;
+}
+
+body{
+    background: #1a1a1a;
+    font-family: var(--fonte-familia-padrao);
+}
+
+
+
+
+
+

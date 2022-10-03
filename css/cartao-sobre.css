@@ -1,0 +1,44 @@
+.cartao-sobre{
+    background-color: transparent;
+    border-radius: 10px;
+    bottom: 5vh;
+    color: transparent;
+    height: 0;
+    left: 10vw;
+    overflow-x: hidden;
+    position: fixed;
+    width: 0;
+    z-index: 2;
+}
+
+.cartao-sobre-completo{
+    background-color: #d1d1d1;
+    box-shadow: 0 0 10px #d1d1d1, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
+    color: #1a1a1a;
+    height: 90vh;
+    transition: .1s ease-in-out;
+    width: 80vw;
+}
+
+.cartao-sobre-completo::-webkit-scrollbar{
+    display: none;
+}
+
+.sobre-conteudo{
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre-completo-txt{
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.sobre-img{
+    align-self: center;
+    border: 3px solid #d1d1d1;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}

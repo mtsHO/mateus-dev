@@ -1,0 +1,61 @@
+/*Cabecalho - Botões*/
+
+.btn-projetos {
+    left: 10vw;
+}
+
+.btn-sobre {
+    left: 25vw;
+}
+
+.btn-rede-sociais{
+    left: 50vw;
+}
+
+/* Home - Cabeçalho Animaçoes de entrada */
+
+.anima-btn{
+    animation:
+        aparece 13s step-end normal,
+        digitando-botao-sobre 1s steps(60) 13s normal;
+
+}
+
+.anima-btn_projetos{
+    animation:
+        aparece 12s step-end normal,
+        botao-digito 500ms steps(20) 31,
+        digitando-botao 4.5s steps(60) 12s normal;
+   
+}
+
+.anima-btn_contato{
+    width: 0;
+    animation:
+        digitando-botao-sobre 1s steps(60) 14.9s normal,
+        aparece 14.9s step-end normal;
+}
+
+.anima_rede-social{
+    animation: 
+        aparece 15.5s step-end;
+}
+
+
+/* Rede Sociais */
+
+.rede-social{
+    margin-left: 60vw;
+    margin-top: 20vh;
+    position: relative;
+    z-index: 2;
+}
+
+img.rede-social-item{
+    margin-right: 10px;
+}
+
+img.rede-social-item:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

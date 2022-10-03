@@ -1,0 +1,97 @@
+/* Home - banner-apresentacao */
+
+.banner-apresentacao_anima-titulo{
+    animation:
+        aparece 1s step-end normal,
+        pisca-cursor 500ms steps(50) 10 normal, 
+        digitando-titulo 3.5s steps(60) 1s normal;
+}
+
+.banner-apresentacao_anima-txt{
+    animation:
+        aparece 5.4s step-end normal,
+        pisca-cursor 500ms steps(50) 25 normal, 
+        digitando-paragrafo 6s steps(60) 5.35s normal;
+    
+}
+
+
+
+.animacao-final{
+    animation: all 0s;
+}
+
+@keyframes pisca-cursor{
+    from{
+        border-right-color: #f1f1f1;
+    }
+    to{
+        border-right-color: transparent; 
+    }
+}
+
+@keyframes digitando-titulo{
+    from{
+        width: 0;
+    }
+    to{
+        width: var(--tamanho-caixa-home-banner-apresentacao-titulo);
+    }
+}
+
+@keyframes aparece{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes digitando-paragrafo{
+    from{
+        width: 0;
+    }
+    to{
+        width: var(--tamanho-caixa-home-banner-apresentacao-subtitulo);
+    }
+}
+
+@keyframes digitando-botao{
+    from{
+        width: 0;
+    }
+    to{
+        width: 67vw;
+    }
+}
+
+@keyframes digitando-botao-sobre{
+    from{
+        width: 0;
+    }
+    to{
+        width: 200px;
+    }
+}
+
+@keyframes botao-digito{
+    from{
+        border-right: 5px solid #d1d1d1;
+    }
+    to{
+        border-right: 5px solid transparent;
+    }
+}
+
+
+@keyframes desliga-botao-digito{
+    from{
+        border-right: 5px solid #d1d1d1;
+    }
+    to{
+        border-right: none;
+    }
+}
+
+

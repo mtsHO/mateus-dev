@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">    
+    <title>Mateus | Desenvolvedor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/banner-apresentacao.css">
+    <link rel="stylesheet" href="css/botao.css">
+    <link rel="stylesheet" href="css/todos-projetos.css">
+    <link rel="stylesheet" href="css/cartao-sobre.css">
+    <link rel="stylesheet" href="css/projeto.css">
+    <link rel="stylesheet" href="css/animacoes.css">
+</head>
+<body>
+
+    <main>
+        <header class="cabecalho">
+            <a class="btn btn-projetos btn-padrao anima-btn anima-btn_projetos">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Projetos
+            </a>
+            <a class="btn btn-sobre btn-padrao anima-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Sobre
+            </a>
+            <p class="btn-rede-sociais btn anima-btn_contato">
+                Contato:
+            </p>
+        </header>
+
+        <section class="banner-apresentacao">
+            <video autoplay muted loop>
+                <source src="img/video-bg.mp4" tipe="video/mp4">
+            </video>
+            <div class="banner-apresentacao_conteudo">
+                <h2 class="banner-apresentacao_titulo banner-apresentacao_anima-titulo">
+                    Oi, eu sou o Mateus! :)
+                </h2>
+                <p class="banner-apresentacao_txt banner-apresentacao_anima-txt">
+                    Sou especialista na criação de sites para empresas e pessoas físicas.
+                </p>
+            </div>
+        </section>
+
+        <div class="rede-social anima_rede-social">
+            <a href="mailto:mateus.he.oliveira@gmail.com" target="_blank"><img class="rede-social-item" src="img/icons8-gmail-70.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=5519982577283&text=Oi%20tudo%20bom%3F%20Eu%20venho%20atrav%C3%A9s%20do%20site%2C%20tenho%20algumas%20duvidas." target="_blank"><img class="rede-social-item" src="img/icons8-whatsapp-48.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/mateus-henrique-de-oliveira/" target="_blank"><img class="rede-social-item" src="img/icons8-linkedin-48.png" alt=""></a>
+            <a href="https://github.com/mtsHO" target="_blank"><img class="rede-social-item" src="img/icons8-github-48.png" alt=""></a>
+            
+        </div>
+
+        <section class="todos-projetos">
+            <a href=""><img src="img/icons8-back-67.png" alt="" class="botao-voltar"></a> 
+            <div class="carousel" id="carousel">
+                <h2 class="todos-projetos_titulo">Clientes Parceiros</h2>
+                <input type="radio" name="slider" id="projeto-1" checked>
+                <input type="radio" name="slider" id="projeto-2">
+                <input type="radio" name="slider" id="projeto-3">
+                <div class="projetos-carousel">
+                    <label class="projeto" for="projeto-1" id="projeto-1">
+                        <img class="projetos-carousel__img" ondblclick="duploClick(0);" src="img/logo_variações-01.png" alt="projeto-1">
+                    </label>
+                    <label class="projeto" for="projeto-2" id="projeto-2">
+                        <img class="projetos-carousel__img" ondblclick="duploClick(1);" src="img/PRETOHausz.png" alt="projeto-2">
+                    </label>
+                    <label class="projeto" for="projeto-3" id="projeto-3">
+                        <img class="projetos-carousel__img" ondblclick="duploClick(2);" src="img/rg-logo-edit.png" alt="projeto-3">
+                    </label>
+                </div>
+                <a class="btn-variacao projetos-saber-mais btn-padrao-variacao">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Saber Mais
+                </a>
+            </section>
+
+        <section class="cartao-sobre">
+            <a href=""><img src="img/icons8-back-67.png" alt="" class="botao-voltar"></a> 
+            <div class="carousel" id="carousel">
+                <h2 class="todos-projetos_titulo">Mateus Henrique de Oliveira</h2>
+                <div class="sobre-conteudo">
+                    <p class="sobre-completo-txt">
+                        Desenvolvedor Frontend | Web Developer | Programming student<br><br>
+                        Habilidades e experiência:<br><br>
+                        - HTML<br>
+                        - CSS<br>
+                        - Javascript<br>
+                        - Jquery<br>
+                        - SQL Server/MySQL<br>
+                        - PHP<br>
+                        - Git&Github<br>
+                        - Wordpress / Wix<br>
+                        - Ecommerce<br><br>
+        
+                        Cursando:<br>
+                        - TypeScript<br>
+                        - React
+                    </p>
+                    <img class="sobre-img" src="img/foto-perfil.png" alt="">               
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projeto-1-completo" id="cartao-projeto-1">
+            <img src="img/icons8-back-67.png" alt="" class="botao-voltar-projeto1">
+            <img class="projeto-img" src="img/logo_variações-01.png" alt="projeto-1">
+            <h2 class="projeto-completo-titulo">www.sobresercorpo.com</h2>
+            <p class="projeto-completo-tx">
+                Projeto de Desenvolvimento de Ecommerce<br><br>
+                Criação de layout de site<br>
+                Cadastro de Produtos<br>
+                Administração de Site
+            </p>
+            <a href="https://www.sobresercorpo.com/" target="_blank" class="btn-variacao projetos-ver-site btn-padrao-variacao">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Visitar site
+            </a>
+        </section>
+
+        <section class="projeto-2-completo" id="cartao-projeto-2">
+            <img src="img/icons8-back-67.png" alt="" class="botao-voltar-projeto2">
+            <img class="projeto-img" src="img/PRETOHausz.png" alt="projeto-1">
+            <h2 class="projeto-completo-titulo">www.hauszatibaia.sxsmkt.com.br</h2>
+            <p class="projeto-completo-tx">Projeto de Desenvolvimento de site institucional<br><br>
+                Criação de layout de site<br>
+                Cadastro de Produtos<br>
+                Administração de Site
+            </p>
+            <a href="https://hauszatibaia.sxsmkt.com.br/" target="_blank" class="btn-variacao projetos-ver-site btn-padrao-variacao">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Visitar site
+            </a>    
+        </section>
+        <section class="projeto-3-completo" id="cartao-projeto-3">
+            <img src="img/icons8-back-67.png" alt="" class="botao-voltar-projeto3">
+            <img class="projeto-img" src="img/rg-logo-edit.png" alt="projeto-1">
+            <h2 class="projeto-completo-titulo">www.rgdecoracoes.com.br</h2>
+            <p class="projeto-completo-tx">Projeto de Desenvolvimento de site institucional<br><br>
+                Criação de layout de site<br>
+                Cadastro de Produtos<br>
+                Administração de Site
+            </p>
+            <a href="https://www.rgdecoracoes.com.br/" target="_blank" class="btn-variacao projetos-ver-site btn-padrao-variacao">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Visitar site
+            </a>    
+        </section>
+        
+    </main>
+
+    <script src="botao.js"></script>
+    
+</body>
+</html>
