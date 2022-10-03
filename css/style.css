@@ -10,20 +10,20 @@
     --fonte-tamanho-titulo: 2.5rem;
     --fonte-tamanho-paragrafo: 1.8rem;
 
-    --tamanho-caixa-home-banner-apresentacao-titulo: 28rem;
-    --tamanho-caixa-home-banner-apresentacao-subtitulo: 65rem;
-    --tamanho-caixa-home-banner-apresentacao-botao: 10rem;
+    --tamanho-caixa-home-banner-apresentacao-titulo: 28vw;
+    --tamanho-caixa-home-banner-apresentacao-subtitulo: 65vw;
+    --tamanho-caixa-home-banner-apresentacao-botao: 15rem;
 
-    --fonte-familia-padrao: 'Special Elite', cursive;;
+    --fonte-familia-padrao: 'Special Elite', cursive;
+    ;
 }
 
-body{
+body {
     background: #1a1a1a;
     font-family: var(--fonte-familia-padrao);
 }
 
-
-
-
-
-
+.ajuste-sobre {
+    position: fixed;
+    top: -30vh
+}

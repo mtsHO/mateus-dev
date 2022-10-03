@@ -1,97 +1,114 @@
 /* Home - banner-apresentacao */
 
-.banner-apresentacao_anima-titulo{
+.banner-apresentacao_anima-titulo {
     animation:
         aparece 1s step-end normal,
-        pisca-cursor 500ms steps(50) 10 normal, 
-        digitando-titulo 3.5s steps(60) 1s normal;
+        pisca-cursor 500ms steps(50) 9.5 normal,
+        digitando-titulo 3s steps(60) 1s normal;
 }
 
-.banner-apresentacao_anima-txt{
+.banner-apresentacao_anima-txt {
     animation:
-        aparece 5.4s step-end normal,
-        pisca-cursor 500ms steps(50) 25 normal, 
-        digitando-paragrafo 6s steps(60) 5.35s normal;
-    
+        aparece 5s step-end normal,
+        pisca-cursor 500ms steps(50) 25 normal,
+        digitando-paragrafo 5s steps(60) 5s normal;
+
 }
 
-
-
-.animacao-final{
-    animation: all 0s;
+.banner-apresentacao_anima-titulo-sobre {
+    animation:
+        aparece 1s step-end normal,
+        pisca-cursor 500ms steps(50) 8 normal,
+        digitando-titulo-sobre 2s steps(60) 1s normal;
 }
 
-@keyframes pisca-cursor{
-    from{
+@keyframes pisca-cursor {
+    from {
         border-right-color: #f1f1f1;
     }
-    to{
-        border-right-color: transparent; 
+
+    to {
+        border-right-color: transparent;
     }
 }
 
-@keyframes digitando-titulo{
-    from{
+@keyframes digitando-titulo {
+    from {
         width: 0;
     }
-    to{
+
+    to {
         width: var(--tamanho-caixa-home-banner-apresentacao-titulo);
     }
 }
 
-@keyframes aparece{
-    from{
+@keyframes digitando-titulo-sobre {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 25vw;
+    }
+}
+
+@keyframes aparece {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
 
-@keyframes digitando-paragrafo{
-    from{
+@keyframes digitando-paragrafo {
+    from {
         width: 0;
     }
-    to{
+
+    to {
         width: var(--tamanho-caixa-home-banner-apresentacao-subtitulo);
     }
 }
 
-@keyframes digitando-botao{
-    from{
+@keyframes digitando-botao {
+    from {
         width: 0;
     }
-    to{
+
+    to {
         width: 67vw;
     }
 }
 
-@keyframes digitando-botao-sobre{
-    from{
+@keyframes digitando-botao-sobre {
+    from {
         width: 0;
     }
-    to{
+
+    to {
         width: 200px;
     }
 }
 
-@keyframes botao-digito{
-    from{
+@keyframes botao-digito {
+    from {
         border-right: 5px solid #d1d1d1;
     }
-    to{
+
+    to {
         border-right: 5px solid transparent;
     }
 }
 
 
-@keyframes desliga-botao-digito{
-    from{
+@keyframes desliga-botao-digito {
+    from {
         border-right: 5px solid #d1d1d1;
     }
-    to{
+
+    to {
         border-right: none;
     }
 }
-
-

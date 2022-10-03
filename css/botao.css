@@ -1,4 +1,4 @@
-.btn{
+.btn {
     border: 5px solid var(--braco);
     border-radius: 2px;
     bottom: 10vh;
@@ -11,6 +11,7 @@
     position: fixed;
     text-decoration: none;
     transition: 0.5s;
+    white-space: nowrap;
     z-index: 1;
 }
 
@@ -25,6 +26,7 @@
     padding: 15px;
     text-decoration: none;
     transition: 0.5s;
+    white-space: nowrap;
 }
 
 .btn-padrao {
@@ -60,7 +62,7 @@
 }
 
 .btn-padrao span:nth-child(2) {
-    background:  linear-gradient(180deg, transparent, #f1f1f1);
+    background: linear-gradient(180deg, transparent, #f1f1f1);
     height: 100%;
     right: 0;
     top: -100%;
@@ -74,7 +76,7 @@
 }
 
 .btn-padrao span:nth-child(3) {
-    background:  linear-gradient(270deg, transparent, #f1f1f1);
+    background: linear-gradient(270deg, transparent, #f1f1f1);
     bottom: 0;
     height: 2px;
     right: -100%;
@@ -88,7 +90,7 @@
 }
 
 .btn-padrao span:nth-child(4) {
-    background:  linear-gradient(360deg, transparent, #f1f1f1);
+    background: linear-gradient(360deg, transparent, #f1f1f1);
     bottom: -100%;
     height: 100%;
     left: 0;
@@ -133,7 +135,7 @@
 }
 
 .btn-padrao-variacao span:nth-child(2) {
-    background:  linear-gradient(180deg, transparent, #191919);
+    background: linear-gradient(180deg, transparent, #191919);
     height: 100%;
     right: 0;
     top: -100%;
@@ -147,7 +149,7 @@
 }
 
 .btn-padrao-variacao span:nth-child(3) {
-    background:  linear-gradient(270deg, transparent, #191919);
+    background: linear-gradient(270deg, transparent, #191919);
     bottom: 0;
     height: 2px;
     right: -100%;
@@ -161,7 +163,7 @@
 }
 
 .btn-padrao-variacao span:nth-child(4) {
-    background:  linear-gradient(360deg, transparent, #191919);
+    background: linear-gradient(360deg, transparent, #191919);
     bottom: -100%;
     height: 100%;
     left: 0;
@@ -174,7 +176,7 @@
     transition-delay: 0.75s;
 }
 
-.botao-voltar {   
+.botao-voltar {
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
     left: 75vw;
     position: relative;
@@ -186,20 +188,7 @@
     transform: scale(1.2);
 }
 
-.botao-voltar-projeto1{
-    box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
-    left: 36.3vw;
-    position: relative;
-    top: -8vh;
-    width: 40px;
-}
-
-.botao-voltar-projeto1:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.botao-voltar-projeto2{
+.botao-voltar-projeto1 {
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
     left: 36.3vw;
     position: relative;
@@ -207,12 +196,12 @@
     width: 40px;
 }
 
-.botao-voltar-projeto2:hover{
+.botao-voltar-projeto1:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.botao-voltar-projeto3{
+.botao-voltar-projeto2 {
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
     left: 36.3vw;
     position: relative;
@@ -220,12 +209,12 @@
     width: 40px;
 }
 
-.botao-voltar-projeto3:hover{
+.botao-voltar-projeto2:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.botao-voltar-projeto4{
+.botao-voltar-projeto3 {
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
     left: 36.3vw;
     position: relative;
@@ -233,12 +222,12 @@
     width: 40px;
 }
 
-.botao-voltar-projeto4:hover{
+.botao-voltar-projeto3:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.botao-voltar-projeto5{
+.botao-voltar-projeto4 {
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
     left: 36.3vw;
     position: relative;
@@ -246,12 +235,13 @@
     width: 40px;
 }
 
-.botao-voltar-projeto5:hover{
+.botao-voltar-projeto4:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.botao-voltar-projeto6{
+
+.botao-voltar-projeto5 {
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
     left: 36.3vw;
     position: relative;
@@ -259,12 +249,12 @@
     width: 40px;
 }
 
-.botao-voltar-projeto6:hover{
+.botao-voltar-projeto5:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.botao-voltar-projeto7{
+.botao-voltar-projeto6 {
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
     left: 36.3vw;
     position: relative;
@@ -272,15 +262,27 @@
     width: 40px;
 }
 
-.botao-voltar-projeto7:hover{
+.botao-voltar-projeto6:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.botao-voltar-projeto7 {
+    box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
+    left: 36.3vw;
+    position: relative;
+    top: -9.5vh;
+    width: 40px;
+}
+
+.botao-voltar-projeto7:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
 
 
-
-.projetos-saber-mais{
+.projetos-saber-mais {
     border-radius: 5px;
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
     color: #1a1a1a;
@@ -292,12 +294,12 @@
     top: 10vh;
 }
 
-.projetos-saber-mais:hover{
+.projetos-saber-mais:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.projetos-ver-site{
+.projetos-ver-site {
     background-color: #d1d1d1;
     border-radius: 5px;
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
@@ -310,8 +312,7 @@
     top: 5vh;
 }
 
-.projetos-ver-site:hover{
+.projetos-ver-site:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-

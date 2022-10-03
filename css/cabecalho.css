@@ -5,57 +5,106 @@
 }
 
 .btn-sobre {
-    left: 25vw;
+    left: 37.5vw;
 }
 
-.btn-rede-sociais{
-    left: 50vw;
+.btn-rede-sociais {
+    left: 60vw;
+}
+
+
+.btn-projetos-sobre {
+    left: 27.5vw;
+}
+
+.btn-sobre-sobre {
+    left: 52vw;
 }
 
 /* Home - Cabeçalho Animaçoes de entrada */
 
-.anima-btn{
+.anima-btn {
     animation:
-        aparece 13s step-end normal,
-        digitando-botao-sobre 1s steps(60) 13s normal;
+        aparece 12.9s step-end normal,
+        digitando-botao-sobre 1s steps(60) 12.9s normal;
 
 }
 
-.anima-btn_projetos{
+.anima-btn-sobre {
     animation:
-        aparece 12s step-end normal,
-        botao-digito 500ms steps(20) 31,
-        digitando-botao 4.5s steps(60) 12s normal;
-   
+        aparece 5.7s step-end normal,
+        digitando-botao-sobre 1s steps(60) 5.7s normal;
+
 }
 
-.anima-btn_contato{
-    width: 0;
+.anima-btn_projetos {
     animation:
-        digitando-botao-sobre 1s steps(60) 14.9s normal,
-        aparece 14.9s step-end normal;
+        aparece 11s step-end normal,
+        botao-digito 500ms steps(20) 30,
+        digitando-botao 4.5s steps(60) 11s normal;
 }
 
-.anima_rede-social{
-    animation: 
-        aparece 15.5s step-end;
+.anima-btn_projetos-sobre {
+    animation:
+        aparece 4s step-end normal,
+        botao-digito 500ms steps(20) 14,
+        digitando-botao 4.5s steps(60) 4s normal;
+}
+
+.anima-btn_contato {
+    animation:
+        aparece 14.5s step-end normal,
+        digitando-botao-sobre 1s steps(60) 14.5s normal;
+}
+
+.anima_rede-social {
+    animation:
+        aparece 14.7s step-end normal;
+}
+
+.anima_rede-social-sobre {
+    animation:
+        aparece 12s ease-in normal;
 }
 
 
 /* Rede Sociais */
 
-.rede-social{
-    margin-left: 60vw;
+.rede-social {
+    margin-left: 70vw;
     margin-top: 20vh;
-    position: relative;
-    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
 }
 
-img.rede-social-item{
+.rede-social-sobre {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+img.rede-social-item {
     margin-right: 10px;
+}
+
+img.rede-social-item-sobre {
+    margin-right: 10px;
+    height: 80px;
 }
 
 img.rede-social-item:hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+img.rede-social-item-sobre:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.centro-sobre {
+    margin-left: 24vw;
+    margin-right: auto;
 }

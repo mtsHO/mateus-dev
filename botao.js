@@ -1,24 +1,23 @@
 // colapse botao projetos
 
-const botaoProjeto = document.querySelector('.btn-projetos');
+const botaoProjeto = document.querySelector('.btn-projetos, .btn-projetos-sobre');
 const botaoVoltar = document.querySelector('.botao-voltar');
 let todosProjetos = document.querySelector('.todos-projetos');
 
 botaoProjeto.addEventListener('click', abrirBotao);
 botaoVoltar.addEventListener('click', abrirBotao);
-  
+
 function abrirBotao(event) {
     todosProjetos.classList.toggle('todos-projetos-completo');
 };
 
-
 // colapse botao sobre
 
-const botaoSobre = document.querySelector('.btn-sobre');
+const botaoSobre = document.querySelector('.btn-sobre, .btn-sobre-sobre');
 let cartaoSobre = document.querySelector('.cartao-sobre');
 
 botaoSobre.addEventListener('click', abrirSobre);
-  
+
 function abrirSobre(event) {
     cartaoSobre.classList.toggle('cartao-sobre-completo');
 };
@@ -41,28 +40,28 @@ const botaoSaberMais = document.querySelector('.projetos-saber-mais')
 
 botaoSaberMais.addEventListener('click', saberMaisProjeto);
 
-function saberMaisProjeto(event){
+function saberMaisProjeto(event) {
 
-    for (i=0; i<projetoAtivo.length; i++){
-        if(projetoAtivo[i].checked){
-            if(i===0){
+    for (i = 0; i < projetoAtivo.length; i++) {
+        if (projetoAtivo[i].checked) {
+            if (i === 0) {
                 cartaoProjeto1.style.display = "flex";
-            } else if (i===1){
+            } else if (i === 1) {
                 cartaoProjeto2.style.display = "flex";
-            } else if (i===2){
+            } else if (i === 2) {
                 cartaoProjeto3.style.display = "flex";
-            } else if (i===3){
+            } else if (i === 3) {
                 cartaoProjeto4.style.display = "flex";
-            } else if (i===4){
+            } else if (i === 4) {
                 cartaoProjeto5.style.display = "flex";
-            } else if (i===5){
+            } else if (i === 5) {
                 cartaoProjeto6.style.display = "flex";
-            } else if (i===6){
+            } else if (i === 6) {
                 cartaoProjeto7.style.display = "flex";
             }
         }
     }
-    
+
 }
 
 const botaoVoltarProjeto1 = document.querySelector('.botao-voltar-projeto1');
@@ -81,49 +80,50 @@ botaoVoltarProjeto5.addEventListener('click', votarPaginaProjeto5);
 botaoVoltarProjeto6.addEventListener('click', votarPaginaProjeto6);
 botaoVoltarProjeto7.addEventListener('click', votarPaginaProjeto7);
 
-function votarPaginaProjeto1(event){
+function votarPaginaProjeto1(event) {
     cartaoProjeto1.style.display = "none";
 }
 
-function votarPaginaProjeto2(event){
+function votarPaginaProjeto2(event) {
     cartaoProjeto2.style.display = "none";
 }
 
-function votarPaginaProjeto3(event){
+function votarPaginaProjeto3(event) {
     cartaoProjeto3.style.display = "none";
 }
 
-function votarPaginaProjeto4(event){
+function votarPaginaProjeto4(event) {
     cartaoProjeto4.style.display = "none";
 }
 
-function votarPaginaProjeto5(event){
+function votarPaginaProjeto5(event) {
     cartaoProjeto5.style.display = "none";
 }
 
-function votarPaginaProjeto6(event){
+function votarPaginaProjeto6(event) {
     cartaoProjeto6.style.display = "none";
 }
 
-function votarPaginaProjeto7(event){
+function votarPaginaProjeto7(event) {
     cartaoProjeto7.style.display = "none";
 }
+
 const botaoSite = document.querySelector('.projetos-ver-site');
 
-function duploClick(event){
-    if(event===0){
+function duploClick(event) {
+    if (event === 0) {
         cartaoProjeto1.style.display = "flex";
-    } else if (event===1){
+    } else if (event === 1) {
         cartaoProjeto2.style.display = "flex";
-    } else if (event===2){
+    } else if (event === 2) {
         cartaoProjeto3.style.display = "flex";
-    } else if (event===3){
+    } else if (event === 3) {
         cartaoProjeto4.style.display = "flex";
-    } else if (event===4){
+    } else if (event === 4) {
         cartaoProjeto5.style.display = "flex";
-    } else if (event===5){
+    } else if (event === 5) {
         cartaoProjeto6.style.display = "flex";
-    } else if (event===6){
+    } else if (event === 6) {
         cartaoProjeto7.style.display = "flex";
     }
 }

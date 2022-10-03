@@ -1,11 +1,11 @@
-.banner-apresentacao{
+.banner-apresentacao {
     display: flex;
     margin-left: 10vw;
     margin-top: 5vh;
     overflow-x: hidden;
 }
 
-.banner-apresentacao video{
+.banner-apresentacao video {
     height: 100vh;
     left: 0;
     object-fit: cover;
@@ -15,30 +15,42 @@
     width: 100vw;
 }
 
-.banner-apresentacao_conteudo{
+.banner-apresentacao_conteudo {
     margin-top: 25vh;
     position: relative;
     z-index: 1;
 }
 
-.banner-apresentacao_titulo{
+.banner-apresentacao_titulo {
     border-right: 4px solid transparent;
     color: var(--branco);
     display: inline-block;
+    margin-left: 22.5vw;
     font-size: var(--fonte-tamanho-titulo);
     overflow-x: hidden;
     padding-right: var(--fonte-tamanho-paragrafo);
     white-space: nowrap;
 }
 
-.banner-apresentacao_txt{
+.banner-apresentacao_txt {
     border-right: 4px solid transparent;
     color: var(--branco);
     display: flex;
     font-size: var(--fonte-tamanho-paragrafo);
     margin-top: 10vh;
+    margin-left: 5vw;
     overflow-x: hidden;
     padding-right: var(--fonte-tamanho-paragrafo);
     white-space: nowrap;
-    width: var(--tamanho-caixa-home-banner-apresentacao--titulo);
+}
+
+.banner-apresentacao_titulo-sobre {
+    border-right: 4px solid transparent;
+    color: var(--branco);
+    display: inline-block;
+    margin-left: 25vw;
+    font-size: var(--fonte-tamanho-titulo);
+    overflow-x: hidden;
+    padding-right: var(--fonte-tamanho-paragrafo);
+    white-space: nowrap;
 }
