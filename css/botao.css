@@ -225,6 +225,61 @@
     transform: scale(1.1);
 }
 
+.botao-voltar-projeto4{
+    box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
+    left: 36.3vw;
+    position: relative;
+    top: -9.5vh;
+    width: 40px;
+}
+
+.botao-voltar-projeto4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.botao-voltar-projeto5{
+    box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
+    left: 36.3vw;
+    position: relative;
+    top: -9.5vh;
+    width: 40px;
+}
+
+.botao-voltar-projeto5:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.botao-voltar-projeto6{
+    box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
+    left: 36.3vw;
+    position: relative;
+    top: -9.5vh;
+    width: 40px;
+}
+
+.botao-voltar-projeto6:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.botao-voltar-projeto7{
+    box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
+    left: 36.3vw;
+    position: relative;
+    top: -9.5vh;
+    width: 40px;
+}
+
+.botao-voltar-projeto7:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+
 .projetos-saber-mais{
     border-radius: 5px;
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
