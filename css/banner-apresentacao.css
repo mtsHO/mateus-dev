@@ -1,22 +1,25 @@
 .banner-apresentacao {
     display: flex;
-    margin-left: 10vw;
+    margin-left: 10px;
     margin-top: 5vh;
     overflow-x: hidden;
 }
 
 .banner-apresentacao video {
+    transform: scale(5);
     height: 100vh;
     left: 0;
-    object-fit: cover;
     opacity: 0.1;
     position: fixed;
+    contain: cover;
     top: 0;
     width: 100vw;
+    padding: 0;
+    margin: 0;    
 }
 
 .banner-apresentacao_conteudo {
-    margin-top: 25vh;
+    margin-top: 15vh;
     position: relative;
     z-index: 1;
 }
@@ -25,7 +28,7 @@
     border-right: 4px solid transparent;
     color: var(--branco);
     display: inline-block;
-    margin-left: 22.5vw;
+    margin: 5vw;
     font-size: var(--fonte-tamanho-titulo);
     overflow-x: hidden;
     padding-right: var(--fonte-tamanho-paragrafo);
@@ -38,8 +41,8 @@
     display: flex;
     font-size: var(--fonte-tamanho-paragrafo);
     margin-top: 10vh;
-    margin-left: 5vw;
-    overflow-x: hidden;
+    margin-left: 2.5vw;
+    overflow: hidden;
     padding-right: var(--fonte-tamanho-paragrafo);
     white-space: nowrap;
 }
@@ -53,4 +56,39 @@
     overflow-x: hidden;
     padding-right: var(--fonte-tamanho-paragrafo);
     white-space: nowrap;
+}
+
+.texto-mobile{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+
+    .banner-apresentacao_conteudo {
+        margin-top: 25vh;
+        position: relative;
+        z-index: 1;
+    }
+
+    .texto-mobile{
+        display: flex;
+    }
+
+    .texto-mobile-ativo{
+        display: none;
+    }
+
+    .banner-apresentacao {
+        margin-left: 10vw;
+    }
+
+    .banner-apresentacao_titulo {
+        display: inline-block;
+        margin-left: 22.5vw;
+        white-space: nowrap;
+    }
+
+    .banner-apresentacao video {
+        transform: scale(1.5);
+    }
 }

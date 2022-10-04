@@ -40,10 +40,10 @@ const botaoSaberMais = document.querySelector('.projetos-saber-mais')
 
 botaoSaberMais.addEventListener('click', saberMaisProjeto);
 
-function saberMaisProjeto(event) {
 
+function saberMaisProjeto(event) {
+    console.log(projetoAtivo);
     for (i = 0; i < projetoAtivo.length; i++) {
-        if (projetoAtivo[i].checked) {
             if (i === 0) {
                 cartaoProjeto1.style.display = "flex";
             } else if (i === 1) {
@@ -62,7 +62,7 @@ function saberMaisProjeto(event) {
         }
     }
 
-}
+//botao voltar projeto
 
 const botaoVoltarProjeto1 = document.querySelector('.botao-voltar-projeto1');
 const botaoVoltarProjeto2 = document.querySelector('.botao-voltar-projeto2');
@@ -108,6 +108,8 @@ function votarPaginaProjeto7(event) {
     cartaoProjeto7.style.display = "none";
 }
 
+//botao ver sitex
+
 const botaoSite = document.querySelector('.projetos-ver-site');
 
 function duploClick(event) {
@@ -126,4 +128,23 @@ function duploClick(event) {
     } else if (event === 6) {
         cartaoProjeto7.style.display = "flex";
     }
+}
+
+
+
+//Piscando o botao saber mais
+
+const slideAtivo = document.querySelector('input[name="slider"]:checked');
+const listaSlides = document.querySelector('.projetos-carousel');
+
+listaSlides.addEventListener('click', piscaBotao);
+
+function piscaBotao(event){
+    setTimeout
+    (
+        function(){
+            botaoSaberMais.classList.toggle('projetos-saber-mais-anima');
+            },250
+    );
+    botaoSaberMais.classList.toggle('projetos-saber-mais-anima');
 }

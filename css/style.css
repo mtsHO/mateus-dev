@@ -7,8 +7,8 @@
 
     --preto-fonte: #2B2B2B;
 
-    --fonte-tamanho-titulo: 2.5rem;
-    --fonte-tamanho-paragrafo: 1.8rem;
+    --fonte-tamanho-titulo: 1.5rem;
+    --fonte-tamanho-paragrafo: 1rem;
 
     --tamanho-caixa-home-banner-apresentacao-titulo: 28vw;
     --tamanho-caixa-home-banner-apresentacao-subtitulo: 65vw;
@@ -26,4 +26,17 @@ body {
 .ajuste-sobre {
     position: fixed;
     top: -30vh
+}
+
+.centro-sobre {
+    margin-left: 10vw;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px){
+
+    :root {
+        --fonte-tamanho-titulo: 2.5rem;
+        --fonte-tamanho-paragrafo: 1.8rem;
+    }
 }

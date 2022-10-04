@@ -32,15 +32,13 @@
 .btn-padrao {
     overflow: hidden;
     transition: 0.2s;
-}
-
-.btn-padrao:hover {
-    background: #d1d1d1;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #d1d1d1, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
-    color: #1a1a1a;
+    height: 6vh;
     font-weight: 600;
-    transition-delay: 1s;
+    box-sizing: border-box;
+    background: #d1d1d1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #d1d1d1, 0 0 10px #f1f1f1, 0 0 20px #ffffff;
+    color: #1a1a1a;
 }
 
 .btn-padrao span {
@@ -280,8 +278,6 @@
     transform: scale(1.1);
 }
 
-
-
 .projetos-saber-mais {
     border-radius: 5px;
     box-shadow: 0 0 10px #1a1a1a, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
@@ -292,6 +288,11 @@
     font-weight: 600;
     padding: 10px;
     top: 10vh;
+}
+
+.projetos-saber-mais-anima{
+    opacity: 0;
+    transition: ease-in-out;
 }
 
 .projetos-saber-mais:hover {
@@ -315,4 +316,31 @@
 .projetos-ver-site:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+
+
+@media screen and (min-width: 768px){
+    .texto-mobile{
+        display: flex;
+    }
+    
+    .btn-padrao {
+        overflow: hidden;
+        transition: 0.2s;
+        background: none;
+        border-radius: none;
+        box-shadow: none;
+        color: #f1f1f1;
+    }
+    
+    .btn-padrao:hover {
+        background: #d1d1d1;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #d1d1d1, 0 0 15px #f1f1f1, 0 0 30px #ffffff;
+        color: #1a1a1a;
+        font-weight: 600;
+        transition-delay: 1s;
+    }
+
 }

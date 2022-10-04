@@ -1,33 +1,36 @@
 /*Cabecalho - Botões*/
 
 .btn-projetos {
-    left: 10vw;
+    left: 5vw;
+    top: 75vh;
+    width: 42.5vw;
 }
 
 .btn-sobre {
-    left: 37.5vw;
+    left: 55vw;
+    top: 75vh;
+    width: 42.5vw;
 }
 
-.btn-rede-sociais {
-    left: 60vw;
+#btn-contato{
+    display: none;
 }
-
 
 .btn-projetos-sobre {
     left: 27.5vw;
+    top: 80vh;
 }
 
 .btn-sobre-sobre {
     left: 52vw;
+    top: 80vh;
 }
 
 /* Home - Cabeçalho Animaçoes de entrada */
 
 .anima-btn {
     animation:
-        aparece 12.9s step-end normal,
-        digitando-botao-sobre 1s steps(60) 12.9s normal;
-
+        aparece 11.5s step-end normal;
 }
 
 .anima-btn-sobre {
@@ -39,9 +42,7 @@
 
 .anima-btn_projetos {
     animation:
-        aparece 11s step-end normal,
-        botao-digito 500ms steps(20) 30,
-        digitando-botao 4.5s steps(60) 11s normal;
+        aparece 11s step-end normal;
 }
 
 .anima-btn_projetos-sobre {
@@ -49,12 +50,6 @@
         aparece 4s step-end normal,
         botao-digito 500ms steps(20) 14,
         digitando-botao 4.5s steps(60) 4s normal;
-}
-
-.anima-btn_contato {
-    animation:
-        aparece 14.5s step-end normal,
-        digitando-botao-sobre 1s steps(60) 14.5s normal;
 }
 
 .anima_rede-social {
@@ -71,8 +66,8 @@
 /* Rede Sociais */
 
 .rede-social {
-    margin-left: 70vw;
-    margin-top: 20vh;
+    margin-left: 28vw;
+    margin-top: 33vh;
     display: flex;
     flex-direction: row;
     z-index: 1;
@@ -87,6 +82,7 @@
 
 img.rede-social-item {
     margin-right: 10px;
+    height: 7vw;
 }
 
 img.rede-social-item-sobre {
@@ -105,6 +101,81 @@ img.rede-social-item-sobre:hover {
 }
 
 .centro-sobre {
-    margin-left: 24vw;
+    margin-left: 23.5vw;
     margin-right: auto;
+}
+
+@media screen and (min-width: 768px){
+
+    #btn-contato{
+        display: flex;
+    }
+     
+    .btn-projetos {
+        left: 10vw;
+        top: 82.5vh;
+        width: auto;
+    }
+    
+    .btn-sobre {
+        left: 37.5vw;
+        top: 82.5vh;
+        width: auto;
+    }
+    
+    .btn-rede-sociais {
+        display: block;
+        left: 60vw;
+        top: 82.5vh;
+    }
+    
+    .btn-projetos-sobre {
+        left: 27.5vw;
+        top: 82.5vh;
+    }
+    
+    .btn-sobre-sobre {
+        left: 52vw;
+        top: 82.5vh;
+    }
+
+    .anima-btn {
+        animation:
+            aparece 12.9s step-end normal,
+            digitando-botao-sobre 1s steps(60) 12.9s normal;
+    
+    }
+
+    .anima-btn-sobre {
+        animation:
+            aparece 5.7s step-end normal,
+            digitando-botao-sobre 1s steps(60) 5.7s normal;
+    
+    }
+
+    .anima-btn_projetos {
+        animation:
+            aparece 11s step-end normal,
+            botao-digito 500ms steps(20) 30,
+            digitando-botao 4.5s steps(60) 11s normal;
+    }
+
+    .rede-social {
+        margin-left: 72vw;
+        margin-top: 20.5vh;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+    }
+
+    img.rede-social-item {
+        margin-right: 10px;
+        height: auto;
+    }
+
+    .anima-btn_contato {
+        animation:
+            aparece 14.5s step-end normal,
+            digitando-botao-sobre 1s steps(60) 14.5s normal;
+    }
 }
